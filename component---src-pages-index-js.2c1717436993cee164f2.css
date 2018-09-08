@@ -4,4 +4,4 @@
 .products{display:grid;grid-gap:24px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}.products__card{color:#fff;padding:16px;text-decoration:none;transition:background .15s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.products__card:focus,.products__card:hover{background:rgba(249,249,250,.1)}
 .index .products{display:grid;grid-gap:24px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}.index .products__card{color:#fff;padding:16px;text-decoration:none;transition:background .15s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.index .products__card:focus,.index .products__card:hover{background:rgba(249,249,250,.1)}
 
-/*# sourceMappingURL=component---src-pages-index-js.a70eb439905824c5defe.css.map*/
+/*# sourceMappingURL=component---src-pages-index-js.2c1717436993cee164f2.css.map*/
