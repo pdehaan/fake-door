@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "author": "John Gruen <jgruen@mozilla.com>",
   "dependencies": {
-    "gatsby": "next",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
@@ -12,13 +11,20 @@
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
+    "gatsby": "next",
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3",
     "photon-colors": "^3.3.1",
-    "react": "^16.4.2",
+    "prettier": "^1.14.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-svg": "^6.0.6",
     "react-typography": "^0.16.13",
+    "react": "^16.4.2",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.0",
+    "stylelint": "^9.5.0",
     "typography": "^0.16.17"
   },
   "keywords": [
@@ -31,10 +37,6 @@
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.2.0",
-    "prettier": "^1.14.2"
   },
   "repository": {
     "type": "git"

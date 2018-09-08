@@ -1,12 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Products from '../components/Products'
+import Layout from '../../components/Layout'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
+import Products from '../../components/Products'
 
-const ProductGroup = ({ data, location }) => {
+const ProductGroup = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   const { title, description } = data.site.siteMetadata
   return (
@@ -36,7 +36,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { fields: { type: { eq: "product" }, slug: {regex: $slug}}}) {
+    allMarkdownRemark(filter: { fields: { type: { eq: "Product" }, slug: {regex: $slug}}}) {
       edges {
         node {
           frontmatter {

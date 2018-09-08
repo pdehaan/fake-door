@@ -1,0 +1,51 @@
+@import '~photon-colors/photon-colors';
+
+.product-hero {
+  header {
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: minmax(420px, 480px) 640px;
+    grid-template-rows: 420px;
+    justify-content: center;
+    margin: 0 auto 120px;
+    max-width: 1080px;
+    width: 96%;
+  }
+
+  button {
+    background: $blue-50;
+    border: 0;
+    border-radius: 4px;
+    color: $white-100;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 16px;
+
+    &:hover,
+    &:focus {
+      background: $blue-60;
+    }
+  }
+
+  .product-hero__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 54px;
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+
+    .product-hero__image {
+      align-items: center;
+      display: flex;
+    }
+  }
+}

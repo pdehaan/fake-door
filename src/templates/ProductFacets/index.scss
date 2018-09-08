@@ -1,0 +1,65 @@
+.product-facet {
+  margin: 60px 0;
+  padding: 24px;
+  position: relative;
+
+  section {
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: 440px 440px;
+    grid-template-rows: 400px;
+    justify-content: center;
+    margin: 0 auto 24px;
+    max-width: 1080px;
+    width: 96%;
+  }
+
+  .product-facet__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .product-facet__image {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    height: 320px;
+  }
+
+  &:nth-child(odd) {
+    background: linear-gradient(#e1eff8, #cbe3f5);
+
+    .product-facet__top {
+      background-size: 100% 60px;
+      height: 60px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: -60px;
+    }
+
+    .product-facet__bottom {
+      background-position: center top;
+      background-size: 100% 60px;
+      bottom: -60px;
+      height: 60px;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .product-facet__content {
+      grid-column: 2 / 3;
+      grid-row: 1 / 1;
+    }
+
+    .product-facet__image {
+      grid-column: 1 / 2;
+    }
+  }
+}

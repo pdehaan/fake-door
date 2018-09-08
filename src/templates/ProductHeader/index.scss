@@ -1,0 +1,38 @@
+.product-header {
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  grid-column: 1 / -1;
+  height: 96px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 96%;
+
+  h2 {
+    align-items: center;
+    display: flex;
+    font-size: 32px;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    opacity: 0.6;
+    padding: 0;
+  }
+
+  li {
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .product-header__app-icon {
+    background-repeat: no-repeat;
+    height: 32px;
+    margin: 0 10px 0 0;
+    width: 32px;
+  }
+}

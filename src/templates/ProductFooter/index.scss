@@ -1,0 +1,17 @@
+@import '~photon-colors/photon-colors';
+
+.product-footer {
+  display: flex;
+  margin: 24px auto 0;
+  max-width: 1200px;
+  width: 96%;
+
+  h4 {
+    padding: 24px;
+  }
+
+  a {
+    color: $grey-90-a80;
+    text-decoration: none;
+  }
+}

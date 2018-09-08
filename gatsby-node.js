@@ -6,8 +6,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({ node, getNode, basePath: 'products' });
     const type = node.fileAbsolutePath.match(/(index)\.md$/)
-      ? 'productGroup'
-      : 'product';
+      ? 'ProductGroup'
+      : 'Product';
     createNodeField({
       node,
       name: 'slug',
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        const componentPath = `./src/templates/${node.fields.type}.js`;
+        const componentPath = `./src/templates/${node.fields.type}/index.js`;
         createPage({
           path: node.fields.slug,
           component: path.resolve(componentPath),

@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/fake-door-generator',
+  pathPrefix: 'fake-door',
   siteMetadata: {
     title: 'Firefox Fake Door',
     description: 'A simple splash site generator for evaluating product concepts',
@@ -16,13 +16,14 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     {
-      // TODO: https://www.w3.org/TR/appmanifest/#usage-examples
+      // TODO: Decide if we need SWs https://www.w3.org/TR/appmanifest/#usage-examples
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/firefox-logo.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    // TODO: Gatsby V2 Beta sw.js file terminally breaks site on refresh until you manually unregister the service worker. Leaving this comment as a warning.
+    //'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-sass',
       options: {

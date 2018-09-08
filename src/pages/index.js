@@ -6,6 +6,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Products from '../components/Products'
 
+import 'index.scss'
+
 const IndexPage = ({ data }) => {
   const edges = data.allMarkdownRemark.edges
   const { title, description } = data.site.siteMetadata
@@ -31,7 +33,7 @@ export const query = graphql`
         repo
       }
     }
-    allMarkdownRemark(filter: { fields: { type: { eq: "productGroup" } } }) {
+    allMarkdownRemark(filter: { fields: { type: { eq: "ProductGroup" } } }) {
       edges {
         node {
           frontmatter {
