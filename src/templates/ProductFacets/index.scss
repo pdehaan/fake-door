@@ -1,23 +1,23 @@
 .product-facet {
   margin: 60px 0;
-  padding: 24px;
+  padding: 30px;
   position: relative;
 
   section {
-    display: grid;
-    grid-gap: 48px;
-    grid-template-columns: 440px 440px;
-    grid-template-rows: 400px;
-    justify-content: center;
-    margin: 0 auto 24px;
-    max-width: 1080px;
-    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
   }
 
   .product-facet__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 440px;
+    width: 100%;
 
     p {
       font-size: 22px;
@@ -29,6 +29,11 @@
     align-self: center;
     display: flex;
     height: 320px;
+    max-width: 440px;
+  }
+
+  img {
+    margin: 0px;
   }
 
   &:nth-child(odd) {
@@ -54,12 +59,39 @@
     }
 
     .product-facet__content {
-      grid-column: 2 / 3;
-      grid-row: 1 / 1;
+      order: 2;
     }
 
     .product-facet__image {
-      grid-column: 1 / 2;
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 959px) {
+  .product-facet {
+    margin: 60px 0;
+    padding: 60px 30px;
+    position: relative;
+    text-align: center;
+  
+    section {
+      flex-direction: column;
+    }
+
+    .product-facet__image {
+      margin-top: 30px;
+      height: auto;
+    }
+
+    &:nth-child(odd) {
+      .product-facet__content {
+        order: 1;
+      }
+  
+      .product-facet__image {
+        order: 2;
+      }
     }
   }
 }

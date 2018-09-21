@@ -1,15 +1,15 @@
 @import '~photon-colors/photon-colors';
 
 .product-hero {
+  padding: 0 30px;
+  width: 100vw;
+
   header {
-    display: grid;
-    grid-gap: 48px;
-    grid-template-columns: minmax(420px, 480px) 640px;
-    grid-template-rows: 420px;
-    justify-content: center;
-    margin: 0 auto 120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px;
     max-width: 1080px;
-    width: 96%;
+    width: 100%;
   }
 
   button {
@@ -32,6 +32,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 420px;
+    width: 100%;
 
     h1 {
       font-size: 54px;
@@ -42,10 +44,35 @@
       font-weight: 700;
       opacity: 0.8;
     }
+  }
+  .product-hero__image {
+    align-items: center;
+    display: flex;
+  }
+}
 
+@media (max-width: 959px) {
+  .product-hero {
+
+    header {
+      flex-direction: column;
+      margin: 0 auto 30px;
+    }
+    .product-hero__content {
+      text-align: center;
+      margin: 0 auto;
+
+      h1 {
+        margin: 0 auto 1rem auto;
+      }
+
+      button {
+        margin: auto;
+      }
+    }
     .product-hero__image {
-      align-items: center;
-      display: flex;
+      margin-top: 60px;
+      max-width: 90vw;
     }
   }
 }
