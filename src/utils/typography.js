@@ -1,8 +1,8 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  headerFontFamily: ['Signika', 'sans-serif'],
-  bodyFontFamily: ['Signika', 'sans-serif'],
+  headerFontFamily: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+  bodyFontFamily: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
   googleFonts: [
     {
       name: 'Signika',

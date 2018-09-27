@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 import './index.scss'
 
 const ProductHero = ({ hero }) => {
@@ -10,7 +10,7 @@ const ProductHero = ({ hero }) => {
         <div className="product-hero__content">
           <h1>{title}</h1>
           <p>{text}</p>
-          <button>{cta}</button>
+          <Link to="/"><button>{cta}</button></Link>
         </div>
         <div className="product-hero__image">
           <img src={image.publicURL} alt={text} width="100%" height="auto" />

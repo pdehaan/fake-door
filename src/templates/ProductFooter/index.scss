@@ -7,12 +7,18 @@
   width: 96%;
 
   h4 {
-    padding: 30px;
-  }
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 700;
 
-  a {
-    color: $grey-90-a80;
-    text-decoration: none;
+    a {
+      color: $grey-90-a60;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $grey-90-a80;
+    }
   }
 }
 
@@ -20,6 +26,7 @@
   .product-footer {
     flex-direction: column;
     margin: 30px;
+    width: auto;
 
     h4 {
       padding: 8px;
