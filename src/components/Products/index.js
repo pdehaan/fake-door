@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import 'index.scss'
+import './index.scss'
 
 const Products = ({ edges }) =>
   <main className="products">
