@@ -40,7 +40,7 @@ Skip this section if you've already cloned the fake-door repository.
 
 Open your Terminal and use the `cd` command to navigate to the folder where you want to put your local copy of fake-door.
 
-#### 3. Clone the repository
+#### 2. Clone the repository
 
 Once you've navigated to the directory you want to keep your work, clone the repo:
 
