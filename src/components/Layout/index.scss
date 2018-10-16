@@ -7,11 +7,18 @@
 
 .layout--index,
 .layout--productGroup {
-  background: linear-gradient(135deg, $blue-50, $teal-60);
   color: $white-100;
   grid-gap: 32px;
   grid-template-rows: 280px 1fr auto;
   padding: 24px;
+}
+
+.layout--index {
+  background: linear-gradient(135deg, $blue-50, $teal-60);
+}
+
+.layout--productGroup {
+  background: linear-gradient(135deg, $ink-70, $ink-50);
 }
 
 .index {
