@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 import './index.scss'
 
 const ProductHeader = ({ name, icon }) => (
@@ -13,9 +13,9 @@ const ProductHeader = ({ name, icon }) => (
         {name}
       </h2>
       <ul>
-        <li>Learn More</li>
-        <li>Our Story</li>
-        <li>Download Now</li>
+        <li><Link to="/">Learn More</Link></li>
+        <li><Link to="/">Our Story</Link></li>
+        <li><Link to="/">Download Now</Link></li>
       </ul>
     </div>
   </div>

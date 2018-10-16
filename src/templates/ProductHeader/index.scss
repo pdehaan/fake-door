@@ -1,3 +1,5 @@
+@import '~photon-colors/photon-colors';
+
 .product-header {
   align-items: center;
   display: flex;
@@ -10,6 +12,7 @@
     align-items: center;
     display: flex;
     font-size: 32px;
+    margin: 0;
   }
 
   ul {
@@ -17,13 +20,27 @@
     display: flex;
     list-style: none;
     margin: 0;
-    opacity: 0.6;
     padding: 0;
   }
 
   li {
+    font-size: 16px;
     font-weight: 700;
-    padding: 10px;
+    padding: 0 24px;
+    margin: 0;
+
+    a {
+      color: $grey-90-a60;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $grey-90-a80;
+    }
+  }
+
+  li:nth-child(1) {
+    padding-left: 0px;
   }
 
   .product-header__app-icon {
@@ -44,6 +61,11 @@
 @media (max-width: 719px) {
   .product-header__container {
     flex-direction: column;
+  }
+  .product-header {
+    li {
+      padding: 24px 10px;
+    }
   }
 }
 
