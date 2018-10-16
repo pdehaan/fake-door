@@ -1,7 +1,8 @@
 @import '~photon-colors/photon-colors';
+
 .layout {
-  min-height: 100vh;
   display: grid;
+  min-height: 100vh;
 }
 
 .layout--index,
