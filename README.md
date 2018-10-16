@@ -36,19 +36,19 @@ In order to get started you'll need:
 
 Skip this section if you've already cloned the fake-door repository.
 
-#### 2. Go to the directory where you want to add the repo
+#### 1. Go to the directory where you want to add the repo
 
 Open your Terminal and use the `cd` command to navigate to the folder where you want to put your local copy of fake-door.
 
-### 3. Clone the repository
+#### 3. Clone the repository
 
 Once you've navigated to the directory you want to keep your work, clone the repo:
 
 `git clone https://github.com/johngruen/fake-door.git`
 
-## Adding Files
+### Adding Files
 
-### 1. Make sure you have the latest version of fake-door
+#### 1. Make sure you have the latest version of fake-door
 
 Since multiple people may be committing to the fake-door repo, it's a good idea to keep your local copy up to date.
 
@@ -73,7 +73,7 @@ git fetch origin
 git reset --hard origin/master
 ```
 
-### 2. Create a new branch to add your changes
+#### 2. Create a new branch to add your changes
 
 Next up, you'll create a new git branch to add your changes. Git branch names must not have any spaces. Try to keep your name short and descriptive so that reviewers can tell what you're trying to do.
 
@@ -81,7 +81,7 @@ Next up, you'll create a new git branch to add your changes. Git branch names mu
 git checkout -b <short-branch-name>
 ```
 
-### 3. Adding product pages
+#### 3. Adding product pages
 
 The directory structure for the fake-door repo is fairly straightforward. All the product pages are in `src/products`. There's a template folder you can copy if you're starting a new project:
 
@@ -91,9 +91,10 @@ cp -r src/products/project-template src/<new-product-name>
 
 Note: `<new-product-name>` should be a lowercase, hyphenated string.
 
-### 4. Updating product pages
+#### 4. Updating product pages
 
 Each product folder should have a set directory structure that will look something like this:
+
 ```
 ├── images
 │   ├── facet-blue.png
@@ -124,7 +125,7 @@ A few notes:
         image: "./images/facet-blue.png"
 ```
 
-### 5. Commit Changes
+#### 5. Commit Changes
 
 In your Terminal, make sure you are in the fake-door directory.
 
@@ -137,16 +138,16 @@ git push -u origin <name-of-your-branch>
 ```
 Note: make sure you've done <b>Step 2</b> before this!
 
-### 6. Go to GitHub and make a pull request
+#### 6. Go to GitHub and make a pull request
 
 Visit the [fake-door repo](https://github.com/johngruen/fake-door) on GitHub, and you should now see a yellow bar asking if you'd like to make a pull request for your commit. Click yes to confirm.
 
 It's generally good practice to have someone else review and merge code you commit. You can message a peer on your team or just assign someone through the GitHub interface.
 
-### 7. Finishing up
+#### 7. Finishing up
 
 Once your new code is merged, it's good practice to go ahead and repeat `step 1` of these instructions. That way your local `master` branch will always be up to date.
 
-## Finally
+### Finally
 
 If you've massively broken your local repository and just want to start over from scratch, just throw it in the trash and clone a new one :)
