@@ -86,7 +86,7 @@ git checkout -b <short-branch-name>
 The directory structure for the fake-door repo is fairly straightforward. All the product pages are in `src/products`. There's a template folder you can copy if you're starting a new project:
 
 ```
-cp -r src/products/project-template src/<new-product-name>
+cp -r src/products/project-template src/products/<new-product-name>
 ```
 
 Note: `<new-product-name>` should be a lowercase, hyphenated string.
