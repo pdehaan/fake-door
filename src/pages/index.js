@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
   const edges = data.allMarkdownRemark.edges
   const { title, description } = data.site.siteMetadata
   return (
-    <Layout meta={data.site.siteMetadata} rootClass="index">
+    <Layout meta={data.site.siteMetadata} rootClass="index" title={title}>
       <Header {...{ title, description }} />
       <Products {...{ edges }} />
       <Footer>
