@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>flow-v2-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="flow-v2-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#6C63FF" transform="translate(1.087865, 32.990620) rotate(36.000000) translate(-1.087865, -32.990620) " x="-24.9121351" y="20.9906205" width="52" height="24"></rect>
+        <text id="F" fill="#4C4C78" transform="translate(16.500000, 14.000000) rotate(-359.000000) translate(-16.500000, -14.000000) " font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="24" font-weight="bold">
+            <tspan x="9" y="23">F</tspan>
+        </text>
+    </g>
+</svg>
