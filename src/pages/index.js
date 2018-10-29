@@ -6,10 +6,10 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Products from '../components/Products'
 
-import './index.scss'
-
 const IndexPage = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges
+  const edges = data.allMarkdownRemark.edges.filter(edge => edge.node.fields.slug !== '/project-template/'
+  );
+  console.log(edges);
   const { title, description } = data.site.siteMetadata
   return (
     <Layout meta={data.site.siteMetadata} rootClass="index">
@@ -33,7 +33,10 @@ export const query = graphql`
         repo
       }
     }
-    allMarkdownRemark(filter: { fields: { type: { eq: "ProductGroup" } } }) {
+    allMarkdownRemark(
+      filter: { fields: { type: { eq: "ProductGroup" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           frontmatter {
