@@ -5,8 +5,8 @@
   display: flex;
   font-weight: 400;
   grid-column: 1 / -1;
-  width: 100vw;
   padding: 30px;
+  width: 100vw;
 
   h2 {
     align-items: center;
@@ -26,8 +26,8 @@
   li {
     font-size: 16px;
     font-weight: 700;
-    padding: 0 24px;
     margin: 0;
+    padding: 0 24px;
 
     a {
       color: $grey-90-a60;
@@ -49,6 +49,7 @@
     margin: 0 10px 0 0;
     width: 32px;
   }
+
   .product-header__container {
     display: flex;
     justify-content: space-between;
@@ -62,6 +63,7 @@
   .product-header__container {
     flex-direction: column;
   }
+
   .product-header {
     li {
       padding: 24px 10px;

@@ -20,3 +20,7 @@
 .layout--productGroup {
   background: linear-gradient(135deg, $ink-70, $ink-50);
 }
+
+.layout--product {
+  animation: fade-in 500ms forwards;
+}
