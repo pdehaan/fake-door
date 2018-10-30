@@ -9,7 +9,7 @@
 .layout--productGroup {
   color: $white-100;
   grid-gap: 32px;
-  grid-template-rows: 280px 1fr auto;
+  grid-template-rows: 200px 1fr;
   padding: 24px;
 }
 
@@ -21,21 +21,6 @@
   background: linear-gradient(135deg, $ink-70, $ink-50);
 }
 
-.index {
-  .products {
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
-  .products__card {
-    color: $white-100;
-    padding: 16px;
-    text-decoration: none;
-    transition: background 150ms;
-    user-select: none;
-    &:hover,
-    &:focus {
-      background: $grey-10-a10;
-    }
-  }
+.layout--product {
+  animation: fade-in 500ms forwards;
 }
