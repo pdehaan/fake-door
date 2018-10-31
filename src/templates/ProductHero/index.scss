@@ -33,6 +33,7 @@
     flex-direction: column;
     flex: 1;
     justify-content: center;
+    max-width: 40%;
     margin-right: 24px;
     width: 100%;
 
@@ -65,7 +66,7 @@
 
     .product-hero__content {
       margin: 0 auto;
-      max-width: 480px;
+      max-width: 720px;
       text-align: center;
 
       h1 {
@@ -78,6 +79,10 @@
 
       button {
         margin: 0 auto;
+      }
+
+      p {
+        margin: 0 auto 32px auto;
       }
     }
 

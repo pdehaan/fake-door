@@ -9,8 +9,9 @@ import Products from '../../components/Products'
 const ProductGroup = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   const { title, description } = data.site.siteMetadata
+
   return (
-    <Layout meta={data.site.siteMetadata} rootClass="productGroup">
+    <Layout meta={data.site.siteMetadata} rootClass="productGroup" title={data.markdownRemark.frontmatter.title}>
       <Header {...{ title, description }} parent={data.markdownRemark.frontmatter.title} />
       <Products {...{ edges }} />
       <Footer>
